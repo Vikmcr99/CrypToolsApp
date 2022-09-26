@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846744782275",
+    "project_id": "sheettraining-e4bb4",
+    "storage_bucket": "sheettraining-e4bb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846744782275:android:566664da62118626de2976",
+        "android_client_info": {
+          "package_name": "com.example.sheettraining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846744782275-40fshatbtr87hmqv1ns733cjgu5gh52g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc0KR0rMgpqhd8OrPXA9xTglpQWiPyNsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846744782275-40fshatbtr87hmqv1ns733cjgu5gh52g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

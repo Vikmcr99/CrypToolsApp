@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navhost"
+    app:startDestination="@id/signinFragment">
+
+    <fragment
+        android:id="@+id/signinFragment"
+        android:name="com.example.sheettraining.View.SigninFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signinFragment_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_signinFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.sheettraining.View.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.sheettraining.View.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_homeFragment2_to_cryptoInfoFragment"
+            app:destination="@id/cryptoInfoFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_coinsListFragment"
+            app:destination="@id/coinsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cryptoInfoFragment"
+        android:name="com.example.sheettraining.View.CryptoInfoFragment"
+        android:label="fragment_crypto_info"
+        tools:layout="@layout/fragment_crypto_info" />
+    <fragment
+        android:id="@+id/coinsListFragment"
+        android:name="com.example.sheettraining.View.CoinsListFragment"
+        android:label="fragment_coins_list"
+        tools:layout="@layout/fragment_coins_list" >
+        <action
+            android:id="@+id/action_coinsListFragment_to_cryproAddFragment"
+            app:destination="@id/cryproAddFragment" />
+        <action
+            android:id="@+id/action_coinsListFragment_to_detailsCryptoFragment"
+            app:destination="@id/detailsCryptoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cryproAddFragment"
+        android:name="com.example.sheettraining.View.CryproAddFragment"
+        android:label="fragment_crypro_add"
+        tools:layout="@layout/fragment_crypro_add" />
+    <fragment
+        android:id="@+id/detailsCryptoFragment"
+        android:name="com.example.sheettraining.View.DetailsCryptoFragment"
+        android:label="fragment_details_crypto"
+        tools:layout="@layout/fragment_details_crypto" />
+</navigation>

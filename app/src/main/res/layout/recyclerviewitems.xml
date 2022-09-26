@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/grena"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="0dp">
+
+
+        <TextView
+            android:id="@+id/idTVCoin"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:padding="4dp"
+            android:text="Cypto"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/idTVDate"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCoin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/idTVDate2"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:padding="4dp"
+            android:text="Data"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/idTVDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCoin"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="0dp"
+            android:padding="4dp"
+            android:text="Data:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/valorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idTVCoin"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/grena"
+            android:padding="4dp"
+            android:text="Valor:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/idTVValor"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valorText"
+            android:layout_marginStart="-159dp"
+            android:layout_marginTop="-28dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/idTVCoin"
+            android:background="@color/grena"
+            android:inputType="number"
+            android:padding="5dp"
+            android:text="Valor"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/idTVDate2"
+            android:layout_marginTop="-3dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/white" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
